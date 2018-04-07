@@ -1,4 +1,4 @@
-# drawingTool TinyMCE Plugin
+# SVG Drawing TinyMCE Plugin
 
 Welcome stranger! This is a repo containing the drawingTool TinyMCE plugin.
 
