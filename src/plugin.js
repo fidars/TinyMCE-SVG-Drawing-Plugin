@@ -40,7 +40,7 @@ const plugin = (editor, url) => {
 				img.onload = function() {
     				ctx.drawImage( img, 0, 0 );
     				var p=canvas.toDataURL( "image/png" );
-					tinyMCE.execCommand('mceInsertContent', false, '<img alt="original" height="50%" width="50%" src="' + p + '"/>');
+					tinyMCE.execCommand('mceInsertContent', false, '<img alt="original" src="' + img.src + '"/>');
 					tinyMCE.activeEditor.windowManager.close();
 				};
 				
