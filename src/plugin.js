@@ -16,7 +16,7 @@ const plugin = (editor) => {
         editor.windowManager.open({
         	
     		title: 'Drawing Tool',
-    		url: '/svg/index.html',
+        	url: '/svg/index.html',
    			width: 710,
    			height: 400,
 			
@@ -67,10 +67,7 @@ const plugin = (editor) => {
 				img.onload = function() {
 					ctx.drawImage( img, 0, 0 );
     				var p=canvas.toDataURL( "image/png" );
-					//tinyMCE.execCommand('mceInsertContent', false, svg);
-					
 					tinyMCE.execCommand('mceInsertContent', false, "<img alt='"+svg+"' src='" + p + "'/>");
-					//console.log(img.alt);
 					tinyMCE.activeEditor.windowManager.close();
 				};
               }
@@ -92,7 +89,7 @@ const plugin = (editor) => {
 		  editor.windowManager.open({
         	
     		title: 'Drawing Tool',
-    		url: '/svg/index.html',
+        	url: '/svg/index.html',
    			width: 710,
    			height: 400,
    			onMouseOver: function () {
@@ -151,10 +148,7 @@ const plugin = (editor) => {
 				img.onload = function() {
 					ctx.drawImage( img, 0, 0 );
     				var p=canvas.toDataURL( "image/png" );
-					//tinyMCE.execCommand('mceInsertContent', false, svg);
-					
 					tinyMCE.execCommand('mceInsertContent', false, "<img alt='"+svg+"' src='" + p + "'/>");
-					//console.log(img.alt);
 					tinyMCE.activeEditor.windowManager.close();
 				};
               }

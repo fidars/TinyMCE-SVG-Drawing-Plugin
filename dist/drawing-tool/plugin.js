@@ -143,10 +143,7 @@ var plugin = function plugin(editor) {
                         img.onload = function () {
                             ctx.drawImage(img, 0, 0);
                             var p = canvas.toDataURL("image/png");
-                            //tinyMCE.execCommand('mceInsertContent', false, svg);
-
                             tinyMCE.execCommand('mceInsertContent', false, "<img alt='" + svg + "' src='" + p + "'/>");
-                            //console.log(img.alt);
                             tinyMCE.activeEditor.windowManager.close();
                         };
                     }
@@ -219,10 +216,7 @@ var plugin = function plugin(editor) {
                         img.onload = function () {
                             ctx.drawImage(img, 0, 0);
                             var p = canvas.toDataURL("image/png");
-                            //tinyMCE.execCommand('mceInsertContent', false, svg);
-
                             tinyMCE.execCommand('mceInsertContent', false, "<img alt='" + svg + "' src='" + p + "'/>");
-                            //console.log(img.alt);
                             tinyMCE.activeEditor.windowManager.close();
                         };
                     }
